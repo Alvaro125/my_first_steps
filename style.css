@@ -1,0 +1,90 @@
+:root{
+    /* colors */
+    --cor: hsl(129, 19%, 7%);
+    --color-base: 127;
+    --color-primary: hsla(var(--color-base), 79%, 40%, 1);
+    --color-secondary: hsla(var(--color-base), 56%, 42%, 1);
+
+    /* font */
+    --font-primary: 'poppins';
+    --font-color-ligth: hsla(var(--color-base), 100%, 97%, 1);
+    --font-color-dark: hsla(var(--color-base), 19%, 7%, 1);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+}
+
+nav{
+    background-color: var(--color-primary);
+    padding: .25rem 1rem;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+nav h1{
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2{
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.list-product{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+.list-product li{
+    display: flex;
+    flex-direction: row;
+    background: var(--color-secondary);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+    margin: 1rem 2rem;
+    box-shadow: 2px 6px 10px 3px rgba(0,0,0,0.32);
+
+}
+.list-product li img{
+    width: 6rem;
+}
+.list-product li .img {
+    margin: auto 1rem auto 0;
+}
+.list-product li .description{
+    color: var(--font-color-ligth);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.list-product li .price{
+    font-size: 2rem;
+}
+.list-product li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--font-color-ligth);
+}
+.list-product li a:hover{
+    color: var(--font-color-dark);
+}
+
+.tabela {
+    border:1px solid #C0C0C0;
+    border-collapse:collapse;
+    padding:5px;
+    margin: 2rem;
+}
+.tabela th {
+    border:1px solid #C0C0C0;
+    padding:5px;
+    background:#F0F0F0;
+}
+.tabela td {
+    border:1px solid #C0C0C0;
+    padding:5px;
+}

@@ -5,8 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello</title>
+
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <h1>Olá! Tudo Bem!</h1>
+    <!-- Projeto de e-commerce -->
+    <nav><h1>Olá! Tudo Bem!</h1></nav>
+    <h2>Hardware</h2>
+    <ul class="list-product">
+        <li>
+            <a href="https://www.kabum.com.br/produto/129960/processador-intel-core-i3-10100f-cache-6mb-4-30-ghz-lga-1200-bx8070110100f" class="img">
+                <img src="img/processador-intel-core-i3-10100f-cache-6mb-4-30-ghz-lga-1200-i3-10100f_1603394030_gg.jpg" alt=""/>
+            </a>    
+                <div class="description">
+                    <strong>
+                        <a href="https://www.kabum.com.br/produto/129960/processador-intel-core-i3-10100f-cache-6mb-4-30-ghz-lga-1200-bx8070110100f">Processador Intel Core i3-10100F, Cache 6MB, 4.30 GHz, LGA 1200 - BX8070110100F</a>
+                    </strong>
+                    <p class="price">R$ 459,90</p>
+                </div>
+        </li>
+        <li>
+            <a href="https://www.kabum.com.br/produto/280889/placa-mae-msi-b560m-a-pro-lga-1200-intel-b560-matx-ddr4" class="img">
+                <img src="img/placa-mae-msi-b560m-a-pro-lga-1200-intel-b560-matx-ddr4_1646854312_gg.jpg" alt=""/>
+            </a>    
+                <div class="description">
+                    <strong>
+                        <a href="https://www.kabum.com.br/produto/280889/placa-mae-msi-b560m-a-pro-lga-1200-intel-b560-matx-ddr4">Placa-Mãe MSI B560M-A PRO, LGA 1200, Intel B560, MATX, DDR4</a>
+                    </strong>
+                    <p class="price">R$ 599,90</p>
+                </div>
+        </li>
+        <li>
+            <a href="https://www.kabum.com.br/produto/176681/memoria-crucial-ballistix-8gb-2666mhz-ddr4-cl16-branca-bl8g26c16u4w" class="img">
+                <img src="img/memoria-ram-gamer-crucial-ballistix-8gb-2666mhz-ddr4-cl16-amd-intel-branca-bl8g26c16u4w_1625679824_gg.jpg" alt=""/>
+            </a>    
+                <div class="description">
+                    <strong>
+                        <a href="https://www.kabum.com.br/produto/176681/memoria-crucial-ballistix-8gb-2666mhz-ddr4-cl16-branca-bl8g26c16u4w">Memória Crucial Ballistix, 8GB, 2666MHz, DDR4, CL16, Branca - BL8G26C16U4W</a>
+                    </strong>
+                    <p class="price">R$ 219,90</p>
+                </div>
+        </li>
+        <li>
+            <a href="https://www.kabum.com.br/produto/111081/ssd-gigabyte-256gb-m-2-pcie-nvme-leituras-1700mb-s-e-gravacoes-1100mb-s-gp-gsm2ne3256gntd" class="img">
+                <img src="img/ssd-gigabyte-256gb-m-2-pcie-nvme-leituras-1700mb-s-e-gravacoes-1100mb-s-gp-gsm2ne3256gntd_1585571206_gg.jpg" alt=""/>
+            </a>    
+                <div class="description">
+                    <strong>
+                        <a href="https://www.kabum.com.br/produto/111081/ssd-gigabyte-256gb-m-2-pcie-nvme-leituras-1700mb-s-e-gravacoes-1100mb-s-gp-gsm2ne3256gntd">SSD Gigabyte, 256GB, M.2, PCIe, NVMe, Leituras: 1700Mb/s e Gravações: 1100Mb/s - GP-GSM2NE3256GNTD</a>
+                    </strong>
+                    <p class="price">R$ 219,90</p>
+                </div>
+        </li>
+    </ul>
+    <center>
+        <table class="tabela">
+            <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Estoque</th>
+                <th>Avaliação</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="color: rgb(16, 126, 223);">&nbsp;Processador Intel Core i3-10100F, Cache 6MB, 4.30 GHz, LGA 1200 - BX8070110100F</td>
+                <td>&nbsp;352</td>
+                <td style="color: darkorange;">
+                    &nbsp;<ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: rgb(16, 126, 223);">&nbsp;Placa-Mãe MSI B560M-A PRO, LGA 1200, Intel B560, MATX, DDR4</td>
+                <td>&nbsp;157</td>
+                <td style="color: darkorange;">
+                    &nbsp;<ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: rgb(16, 126, 223);">&nbsp;Memória Crucial Ballistix, 8GB, 2666MHz, DDR4, CL16, Branca - BL8G26C16U4W</td>
+                <td>&nbsp;583</td>
+                <td style="color: darkorange;">
+                    &nbsp;<ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: rgb(16, 126, 223);">&nbsp;SSD Gigabyte, 256GB, M.2, PCIe, NVMe, Leituras: 1700Mb/s e Gravações: 1100Mb/s - GP-GSM2NE3256GNTD</td>
+                <td>&nbsp;123</td>
+                <td style="color: darkorange;">
+                    &nbsp;<ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <h3>Criado por:</h3>
+        <h4>Alvaro M.F.</h4>
+    </center>
+
 </body>
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      body {
+        font-family: "poppins";
+      }
+      label{
+          border: 2px solid black;
+          padding: .5rem;
+          border-radius: .25rem;
+          font-size: 2rem;
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+      }
+      input[type="radio"]:checked + label {
+        font-weight: bold;
+        color: white;
+      }
+
+      input[type="radio"]#woman:checked + label{
+        background: linear-gradient(90deg, rgba(240,2,51,1) 2%, rgba(255,0,0,1) 100%);
+      }
+      input[type="radio"]#man:checked + label{
+        background: linear-gradient(90deg, rgba(21,0,255,1) 4%, rgba(0,158,82,1) 100%);
+      }
+      input[type="radio"]#transwoman:checked + label{
+        background: linear-gradient(90deg, rgba(240,2,51,1) 2%, rgba(255,0,0,1) 100%);
+      }
+      input[type="radio"]#transman:checked + label{
+        background: linear-gradient(90deg, rgba(21,0,255,1) 4%, rgba(0,158,82,1) 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Qual o seu Gênero</h1>
+    <input type="radio" name="genero" id="man" />
+    <label for="man"><ion-icon name="male-outline"></ion-icon>&nbsp;Homem</label>
+    <input type="radio" name="genero" id="woman" />
+    <label for="woman"><ion-icon name="female-outline"></ion-icon>&nbsp;Mulher</label>
+    <input type="radio" name="genero" id="transman" />
+    <label for="transman"><ion-icon name="male-female-outline"></ion-icon>&nbsp;Homem Trans</label>
+    <input type="radio" name="genero" id="transwoman" />
+    <label for="transwoman"><ion-icon name="male-female-outline"></ion-icon>&nbsp;Mulher Trans</label>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      body {
+        font-family: "poppins";
+      }
+      input[type="radio"]+label{
+          border: 2px solid black;
+          padding: .25rem;
+          border-radius: .25rem;
+          font-size: 1rem;
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+      }
+      input[type="radio"]:checked + label {
+        font-weight: bold;
+        color: white;
+      }
+
+      input[type="radio"]#woman:checked + label{
+        background: linear-gradient(90deg, rgba(240,2,51,1) 2%, rgba(255,0,0,1) 100%);
+      }
+      input[type="radio"]#man:checked + label{
+        background: linear-gradient(90deg, rgba(21,0,255,1) 4%, rgba(0,158,82,1) 100%);
+      }
+      input[type="radio"]#transwoman:checked + label{
+        background: linear-gradient(90deg, rgba(240,2,51,1) 2%, rgba(255,0,0,1) 100%);
+      }
+      input[type="radio"]#transman:checked + label{
+        background: linear-gradient(90deg, rgba(21,0,255,1) 4%, rgba(0,158,82,1) 100%);
+      }
+    </style>
+  </head>
+  <body>
+      
+    <fieldset>
+        <legend>Cadastro</legend>
+        <form action="/hello-world.html">
+
+            <label for="name">Nome Completo:</label>
+            <input type="text" name="name" id="name"/>
+            <br/>
+            <label for="cpf">CPF:</label>
+            <input type="number" name="cpf" id="cpf"/>
+            <br/>
+            <label for="nasc">Data de Nascimento:</label>
+            <input type="date" name="nasc" id="nasc"/>
+            <br/>
+            <label for="estado">Estado onde nasceu:</label>
+            <select id="estado" name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+            <br/>
+            <label for="cidade">Cidade onde nasceu:</label>
+            <input type="text" name="cidade" id="cidade"/>
+            
+            <h4>Qual o seu Gênero</h4>
+            <input type="radio" name="genero" id="man" />
+            <label for="man"><ion-icon name="male-outline"></ion-icon>&nbsp;Homem</label>
+            <input type="radio" name="genero" id="woman" />
+            <label for="woman"><ion-icon name="female-outline"></ion-icon>&nbsp;Mulher</label>
+            <input type="radio" name="genero" id="transman" />
+            <label for="transman"><ion-icon name="male-female-outline"></ion-icon>&nbsp;Homem Trans</label>
+            <input type="radio" name="genero" id="transwoman" />
+            <label for="transwoman"><ion-icon name="male-female-outline"></ion-icon>&nbsp;Mulher Trans</label>
+    
+            <h4>Por onde acessa a internet:</h4>
+            <div class="check">
+                <input type="checkbox" name="internet" id="pc">
+                <label for="pc">Computador</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="internet" id="notebook">
+                <label for="notebook">Notebook</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="internet" id="tablet">
+                <label for="tablet">Tablet</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="internet" id="smartphone">
+                <label for="smartphone">Smartphone</label>            
+            </div>
+            <div class="check">
+                <input type="checkbox" name="internet" id="outro">
+                <label for="outro">Outro</label>
+            </div>
+    
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br/>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+            <br/>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+  </body>
+</html>

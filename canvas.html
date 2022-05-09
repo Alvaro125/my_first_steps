@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+      const size = 10;
+      const red = "#e53935";
+      const fdo = "#607d8b";
+      const blk = "#000";
+      const wit = "#fff";
+      const gry = "#9e9e9e";
+      const bg = [
+          /*00*/[fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo],
+          /*01*/[fdo,fdo,fdo,fdo,fdo,fdo,blk,blk,blk,blk,fdo,fdo,fdo,fdo,fdo,fdo],
+          /*02*/[fdo,fdo,fdo,fdo,blk,blk,red,red,red,red,blk,blk,fdo,fdo,fdo,fdo],
+          /*03*/[fdo,fdo,fdo,blk,red,red,red,red,red,red,red,red,blk,fdo,fdo,fdo],
+          /*04*/[fdo,fdo,blk,red,red,wit,red,red,red,red,red,red,blk,blk,fdo,fdo],
+          /*05*/[fdo,fdo,blk,red,wit,red,red,red,red,red,red,red,red,blk,fdo,fdo],
+          /*06*/[fdo,blk,red,red,red,red,red,red,red,red,red,red,red,red,blk,fdo],
+          /*07*/[fdo,blk,blk,blk,red,red,red,red,blk,blk,blk,red,red,red,blk,fdo],
+          /*08*/[fdo,blk,blk,blk,blk,red,red,blk,wit,wit,wit,blk,red,red,blk,fdo],
+          /*09*/[fdo,blk,gry,wit,wit,blk,blk,blk,wit,wit,wit,blk,blk,blk,blk,fdo],
+          /*10*/[fdo,fdo,blk,wit,wit,wit,blk,blk,wit,wit,wit,blk,wit,blk,fdo,fdo],
+          /*11*/[fdo,fdo,blk,gry,wit,wit,wit,wit,blk,blk,blk,wit,wit,blk,fdo,fdo],
+          /*12*/[fdo,fdo,fdo,blk,gry,wit,wit,wit,wit,wit,wit,wit,blk,fdo,fdo,fdo],
+          /*13*/[fdo,fdo,fdo,fdo,blk,blk,gry,gry,wit,wit,blk,blk,fdo,fdo,fdo,fdo],
+          /*14*/[fdo,fdo,fdo,fdo,fdo,fdo,blk,blk,blk,blk,fdo,fdo,fdo,fdo,fdo,fdo],
+          /*15*/[fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo,fdo]
+      ];
+      var x=0
+      var y=0
+      for (let i = 0; i < bg.length; i++) {
+          for (let j = 0; j < bg[i].length; j++) {
+            ctx.fillStyle = bg[i][j];
+            ctx.fillRect(x, y, size, size);
+            x += size;
+          }
+          y += size;
+          x = 0;
+      }
+    </script>
+  </body>
+</html>
